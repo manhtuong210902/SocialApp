@@ -1,0 +1,40 @@
+POST http://localhost:5001/api/auth/register
+Content-Type: application/json
+
+{
+    "email" : "mtuong669@gmail.com",
+    "username": "manhtuong",
+    "password": "123456"
+}
+
+###
+POST http://localhost:5001/api/auth/login 
+Content-Type: application/json
+
+{
+    "email" : "mtuong669@gmail.com",
+    "password" : "123456"
+}
+
+
+###
+GET http://localhost:5001/api/auth
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzFlYWE1YzNmZmQ3NGYzM2MwZmQwMTYiLCJpYXQiOjE2NzY5NTM4MDJ9.-LYyb7vsJ2AHJlGSocP-mr3n0ij2IYDEGay4L2mwNM0
+
+
+###
+POST http://localhost:5001/api/posts/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzFlYWE1YzNmZmQ3NGYzM2MwZmQwMTYiLCJpYXQiOjE2NzY5NTM4MDJ9.-LYyb7vsJ2AHJlGSocP-mr3n0ij2IYDEGay4L2mwNM0
+
+{
+    "title" : "HTML & CSS",
+    "content": "Hello world"
+}
+
+###
+GET http://localhost:5001/api/posts
+
+
+###
+GET http://localhost:5001/api/auth/users

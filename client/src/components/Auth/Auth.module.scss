@@ -1,0 +1,35 @@
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--bs-gray-700);
+}
+
+.description {
+    font-size: 15px;
+    color: var(--bs-gray-600);
+}
+
+.form-input {
+    font-size: 14px !important;
+    color: var(--bs-gray-900) !important;
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.btn-submit {
+    border-radius: 0.5rem;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--primary);
+    padding: 8px 16px;
+}
+
+.navigate-link {
+    color: var(--primary);
+    :hover {
+        color: var(--primary) !important;
+    }
+}

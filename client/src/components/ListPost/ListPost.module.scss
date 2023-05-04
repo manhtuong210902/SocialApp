@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    padding: 0 20px;
+    height: var(--header-height);
+    h5 {
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn-add {
+        background-color: #fc997c;
+        border: #fc997c;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: var(--border-radius);
+        &:hover {
+            background-color: #f9815d !important;
+        }
+    }
+}
+
+.no-post {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: var(--border-radius);
+    padding: 16px;
+    margin-bottom: 20px;
+    h1 {
+        color: var(--text-color);
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+    }
+}

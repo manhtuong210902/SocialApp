@@ -1,0 +1,56 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 13px 16px;
+    cursor: pointer;
+    &:hover {
+        background-color: #ededed;
+    }
+
+    span {
+        color: #999;
+        font-size: 10px;
+    }
+}
+
+.wrapper.active {
+    background-color: var(--body-color);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    .name {
+        font-size: 14px;
+        color: var(--text-color);
+        margin: 0;
+        width: 120px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .last-message {
+        font-size: 14px;
+        color: #999 !important;
+        font-weight: 300;
+        margin: 0;
+        width: 120px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}

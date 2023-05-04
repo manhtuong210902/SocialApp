@@ -1,0 +1,57 @@
+.header {
+    width: 100%;
+    padding: 0px 12px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #999;
+    h3 {
+        font-size: 14px;
+        color: var(--text-color);
+        margin: 0;
+    }
+}
+
+.list-message {
+    width: 100%;
+    height: 380px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.input-chat {
+    flex: 1;
+    form {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 10px;
+        input {
+            flex: 1;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        span {
+            color: var(--text-color);
+        }
+    }
+}
+
+.no-chat {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        margin: 0;
+        font-size: 16px;
+    }
+}

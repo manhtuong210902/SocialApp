@@ -1,0 +1,134 @@
+@import 'normalize.css';
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-family: 'Public Sans', sans-serif;
+    --primary: #2e4c6d;
+    --link-color: #0d6efd;
+    --horver-primary: #3b5f85;
+    --body-color: #eff4fb;
+    --header-height: 60px;
+    --btn-color: #fc997c;
+    //--bs-link-hover-color: ;
+    --text-color: #495057;
+    --hover-rgba: rgba(201, 249, 212, 0.8);
+    --border-radius: 4px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-style: normal;
+    color: var(--body-color);
+    font-size: 15px;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    background-color: var(--body-color);
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+p {
+    color: var(--text-color) !important;
+}
+
+.App {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.btn {
+    background-color: #fc997c;
+    border: #fc997c;
+    position: relative;
+    border-radius: var(--border-radius);
+    &:hover {
+        background-color: #f9815d;
+    }
+}
+
+.btn.primary {
+    background-color: var(--primary);
+    &:hover {
+        background-color: #37679a;
+    }
+}
+
+// .btn:disabled {
+// }
+
+.btn.close {
+    background-color: #999;
+    color: #333;
+    &:hover {
+        background-color: #888686;
+    }
+}
+
+.btn.link {
+    background-color: transparent;
+    color: var(--link-color);
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--link-color);
+    }
+}
+
+//custom form
+.form-control {
+    border-radius: var(--border-radius);
+}
+
+//custom modal
+.modal-content {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+}
+
+.modal-title {
+    font-size: 20px;
+}
+
+.modal-body {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #999;
+}

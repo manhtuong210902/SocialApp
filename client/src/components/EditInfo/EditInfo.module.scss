@@ -1,0 +1,68 @@
+.form-edit {
+    border-radius: var(--border-radius);
+    border: 1px solid #999;
+    padding: 8px;
+    width: 100%;
+    label {
+        display: block;
+        font-size: 13px;
+        color: #333;
+        font-weight: 600;
+        margin-bottom: 4px;
+    }
+
+    textarea {
+        border: none;
+        outline: none;
+        margin: 0;
+        width: 100%;
+        color: var(--text-color);
+        font-weight: 400;
+        &::-webkit-input-placeholder {
+            font-weight: 400 !important;
+        }
+    }
+
+    input {
+        margin: 0;
+        width: 100%;
+        color: var(--text-color);
+        font-weight: 400;
+    }
+}
+
+.add-info {
+    display: flex;
+    align-items: center;
+    color: var(--link-color);
+    gap: 10px;
+    font-size: 18px;
+    span {
+        font-size: 15px;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.form-edit-btns {
+    float: right;
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.gender-edit {
+    label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    input {
+        width: unset;
+    }
+}

@@ -1,0 +1,112 @@
+.wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius);
+    padding: 180px 35px 35px 50px;
+    position: relative;
+    z-index: 0;
+    background-image: linear-gradient(to right, var(--primary), var(--link-color));
+    margin-bottom: 30px;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+}
+
+.media-image {
+    position: relative;
+    margin-right: 30px;
+}
+
+.avatar {
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    width: 125px;
+}
+
+.camera-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #999;
+    cursor: pointer;
+    border: 2px solid #fff;
+    transform: translateY(-20%);
+}
+
+.media-body {
+    h5 {
+        color: #fff;
+    }
+}
+
+.media-social {
+    display: flex;
+    gap: 10px;
+    a {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            background-color: #fc997c;
+        }
+    }
+
+    .bg-fb {
+        background-color: #365493;
+    }
+
+    .bg-ins {
+        background-color: #ec407a;
+    }
+
+    .bg-ytb {
+        background-color: red;
+    }
+
+    .bg-github {
+        background-color: #333;
+    }
+}
+
+.change-cover {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .wrapper {
+        padding-top: 110px;
+    }
+
+    .media {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .media-image {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .media-social {
+        justify-content: center;
+    }
+}
